@@ -20,6 +20,17 @@ public class Client implements Comparable<Client>{
         return ID;
     }
 
+    @Override
+    public String toString() {
+        return "Client{" +
+                "ID=" + ID +
+                ", registrationDate=" + registrationDate +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     public void setID(int ID) {
         this.ID = ID;
     }
